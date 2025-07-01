@@ -29,26 +29,30 @@ body{
 }
 .popup1{
   position: absolute;
-  top: 235px;
-  left:475px;
+  font-weight: bold;
+  top: 30vh;
+  left: 31vw;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s;
 }
 .popup2{
   position: absolute;
+  font-weight: bold;
   color:black;
-  top: 290px;
-  left:850px;
+  top: 37.6vh;
+  left:53vw;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s;
+  
 }
 .popup3{
 
   position:absolute;
-  top: 140px;
-  left: 1160px;
+  top: 18vh;
+  left:73.8vw;
+  font-weight: bold;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s;
@@ -74,36 +78,36 @@ h2{
 .contactButton{
   background-color: transparent;
   position: absolute;
-  top: 21vh;
-  left:71vw;
+  top: 20.5vh;
+  left:70.8vw;
   background-image: url("assets/redFlag2.png");
   background-size: cover;
-  width: 30px;
-  height: 40px;
+  width: 3vw;
+  height: 6vh;
   background-repeat: no-repeat;
   border: none;
 }
 .abtButton{
   background-color: transparent;
   position: absolute;
-  top: 33.5vh;
+  top: 33.3vh;
   left: 28vw;
   background-image: url("assets/redFlag2.png");
   background-size: cover;
-  width: 30px;
-  height: 40px;
+  width: 3vw;
+  height: 6vh;
   background-repeat: no-repeat;
   border: none;
 }
 .expButton{
   background-color: transparent;
   position: absolute;
-  top: 41.1vh;
+  top: 40.3vh;
   left:50vw;
   background-image: url("assets/redFlag2.png");
   background-size: cover;
-  width: 30px;
-  height: 40px;
+  width: 3vw;
+  height: 6vh;
   background-repeat: no-repeat;
   border: none;
 }

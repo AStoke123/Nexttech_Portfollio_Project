@@ -61,6 +61,8 @@ body{
 }
 .educationText,.bandText,.ambitionText{
   font-size: 25px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 .flex2{
   display: flex;
@@ -72,6 +74,7 @@ body{
   width: 400px;
   height: auto;
   display: block;
+  margin-right: 5vw;
 }
 .exitB{
   align-self: flex-start;
