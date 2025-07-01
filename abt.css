@@ -1,0 +1,108 @@
+
+.intro{
+    margin-left: 300px;
+    margin-right: 300px;
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+.topImage{
+  display: block;
+  width: 250px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1, h2{
+  padding-top: 45px;
+  font-size: 50px;
+  font-family: 'Gill Sans', Arial;
+  text-align: center;
+  color: white;
+   text-shadow: 5px 5px 1px darkgray, 5px 5px 1px darkgray, 5px 5px 1px darkgray;
+}
+h2{
+  padding-top: 0px;
+}
+
+body{
+  margin: 0px;
+  background-color: #1B3167;
+  background-image: url("file.svg");
+  background-repeat: repeat-y;
+  background-size: 100vw, auto;
+
+  color: white;
+}
+.topContainer{
+  margin-left:150px;
+  margin-right: 150px;
+  margin-top: 100px;
+   margin-bottom: 100px;
+  background-color: #92A9E2;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 80% 80%; /* fixs backgroud image showing */
+ z-index: 1;
+  box-shadow: 0 0 10px white, 0 0 10px white, 0 0 10px white;
+}
+.flexGroup{
+  display: flex;
+  gap: 32px; /* space between items */
+  align-items: center; /* vertically align items */
+  justify-content: center; /* or center, as needed */
+}
+.infoGroup{
+  max-width: 500px;
+}
+.bandImg{
+  width: 350px;
+  height: auto;
+  display:block;
+}
+.educationText,.bandText,.ambitionText{
+  font-size: 25px;
+}
+.flex2{
+  display: flex;
+  gap: 32px; /* space between items */
+  align-items: center; /* vertically align items */
+  justify-content: center; /* or center, as needed */
+}
+.ambitionImg{
+  width: 400px;
+  height: auto;
+  display: block;
+}
+.exitB{
+  align-self: flex-start;
+  background-color: gray;
+  color: white;
+  font-weight: bold;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+/* only for contact form */
+.contactForm{
+  margin-left: 30px;
+  font-size:25px;
+}
+.submit{
+
+  margin-bottom: 50px;
+  background-color: gray;
+  color: white;
+  font-weight: bold;
+}
+/* expereience page*/
+.VSLanguages{
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+ 
+}
+.VSLanguages img{
+  width:100px;
+  height: 100px;
+  
+}

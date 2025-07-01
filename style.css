@@ -1,0 +1,112 @@
+
+
+.headline{
+  padding-top: 80px;
+  font-size: 50px;
+  font-family: 'Gill Sans', Arial;
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 2px white, 0 0 10px white, 0 0 15px #ffff;
+  
+}
+body{
+  margin: 0px;
+  background-color: #1B3167;
+  color: white;
+}
+.topContainer{
+  background-image: url('background.svg.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 80% 80%; /* fixs backgroud image showing */
+ z-index: 1;
+  height: 500px;
+}
+.button1{
+ font-size: 10px;
+
+}
+.popup1,.popup3,.popup2{
+  font-size: 20px;
+}
+.popup1{
+  position: absolute;
+  top: 235px;
+  left:475px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+.popup2{
+  position: absolute;
+  color:black;
+  top: 290px;
+  left:850px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+.popup3{
+
+  position:absolute;
+  top: 140px;
+  left: 1160px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+.contactButton:hover + .popup3{
+  display:block;
+}
+.instruct{
+  background-color: #92A9E2;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 1px white, 0 0 2px white , 0 0 3px #ffff;
+
+}
+h2{
+  font-size: 40px;
+}
+.instructText{
+  font-size:25px;
+}
+.contactButton{
+  background-color: transparent;
+  position: absolute;
+  top: 170px;
+  left:1120px;
+  background-image: url("assets/redFlag2.png");
+  background-size: cover;
+  width: 30px;
+  height: 40px;
+  background-repeat: no-repeat;
+  border: none;
+}
+.abtButton{
+  background-color: transparent;
+  position: absolute;
+  top: 265px;
+  left:435px;
+  background-image: url("assets/redFlag2.png");
+  background-size: cover;
+  width: 30px;
+  height: 40px;
+  background-repeat: no-repeat;
+  border: none;
+}
+.expButton{
+  background-color: transparent;
+  position: absolute;
+  top: 320px;
+  left:810px;
+  background-image: url("assets/redFlag2.png");
+  background-size: cover;
+  width: 30px;
+  height: 40px;
+  background-repeat: no-repeat;
+  border: none;
+}
+/* pages are gonna be , Home, about me , contacts, projects 
