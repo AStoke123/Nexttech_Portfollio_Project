@@ -1,5 +1,3 @@
-
-
 .headline{
   padding-top: 80px;
   font-size: 50px;
@@ -15,7 +13,7 @@ body{
   color: white;
 }
 .topContainer{
-  background-image: url('background.svg.svg');
+  background-image: url('cropped2.svg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 80% 80%; /* fixs backgroud image showing */
@@ -76,8 +74,8 @@ h2{
 .contactButton{
   background-color: transparent;
   position: absolute;
-  top: 170px;
-  left:1120px;
+  top: 21vh;
+  left:71vw;
   background-image: url("assets/redFlag2.png");
   background-size: cover;
   width: 30px;
@@ -88,8 +86,8 @@ h2{
 .abtButton{
   background-color: transparent;
   position: absolute;
-  top: 265px;
-  left:435px;
+  top: 33.3vh;
+  left: 28vw;
   background-image: url("assets/redFlag2.png");
   background-size: cover;
   width: 30px;
@@ -100,8 +98,8 @@ h2{
 .expButton{
   background-color: transparent;
   position: absolute;
-  top: 320px;
-  left:810px;
+  top: 41.1vh;
+  left:50vw;
   background-image: url("assets/redFlag2.png");
   background-size: cover;
   width: 30px;
@@ -109,4 +107,3 @@ h2{
   background-repeat: no-repeat;
   border: none;
 }
-/* pages are gonna be , Home, about me , contacts, projects 
