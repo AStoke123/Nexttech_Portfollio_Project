@@ -7,6 +7,10 @@ window.onload = function() {
   let contactButton = document.querySelector(".contactButton")
   let exitButton = document.querySelector(".exitB")
   let expButton = document.querySelector(".expButton")
+  let submit = document.querySelector(".submit")
+  let snow = true;
+  let toggle = document.querySelector(".toggle");
+  let snowAnimationId = null;
   console.log("script.js is running!");
   const tl = gsap.timeline({defaults: {duration: .75, ease: "power1.out"}})
 
@@ -55,8 +59,10 @@ if(canvas){const ctx = canvas.getContext('2d');
   }
 
   function update() {
-    drawSnowflakes();
-    requestAnimationFrame(update);
+    if (snow) {
+      drawSnowflakes();
+      snowAnimationId = requestAnimationFrame(update);
+    }
   }
 
   window.addEventListener('resize', () => {
@@ -65,23 +71,43 @@ if(canvas){const ctx = canvas.getContext('2d');
   });
 
   createSnowflakes();
-  update();}
+  update();
+
+  if (toggle) {
+    toggle.addEventListener('click', function() {
+      if (snow) {
+        toggle.style.backgroundImage = "url('assets/noSnow.png')";
+        snow = false;
+        cancelAnimationFrame(snowAnimationId);
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+      } else {
+        toggle.style.backgroundImage = "url('assets/Snow.png')";
+        snow = true;
+        update();
+      }
+    });
+  }
+}
 if(abtButton){
     abtButton.addEventListener('click',function(){
   window.location.href = 'aboutMe.html';
   })
   abtButton.addEventListener('mouseenter', function() {
+    gsap.to(abtButton, { scale: 1.1, duration: 0.2, ease: "power1.out" });
     tl.fromTo('.popup1', {opacity:0}, {opacity:1})
   });
   abtButton.addEventListener('mouseleave', function() {
+     gsap.to(abtButton, { scale: 1, duration: 0.2, ease: "power1.out" });
     tl.fromTo('.popup1', {opacity:1}, {opacity:0})
   });
 }
 if(contactButton){
     contactButton.addEventListener('mouseenter', function() {
+      gsap.to(contactButton, { scale: 1.1, duration: 0.2, ease: "power1.out" });
       tl.fromTo('.popup3', {opacity:0}, {opacity:1})
     });
     contactButton.addEventListener('mouseleave', function() {
+       gsap.to(contactButton, { scale: 1, duration: 0.2, ease: "power1.out" });
       tl.fromTo('.popup3', {opacity:1}, {opacity:0})
     });
     contactButton.addEventListener('click', function(){
@@ -90,7 +116,7 @@ if(contactButton){
 }
 if(exitButton){
     exitButton.addEventListener('mouseenter', function(){
-      gsap.to(exitButton, { scale: 1.1, duration: 0.2, ease: "power1.out" });
+      gsap.to(exitButton, { scale: 1.2, duration: 0.2, ease: "power1.out" });
     })
     exitButton.addEventListener('mouseleave', function(){
       gsap.to(exitButton, { scale: 1, duration: 0.2, ease: "power1.out" });
@@ -98,16 +124,26 @@ if(exitButton){
 }
 if(expButton){
     expButton.addEventListener('mouseenter', function() {
+      gsap.to(expButton, { scale: 1.1, duration: 0.2, ease: "power1.out" });
       tl.fromTo('.popup2', {opacity:0}, {opacity:1})
     });
     expButton.addEventListener('mouseleave', function() {
+       gsap.to(expButton, { scale: 1, duration: 0.2, ease: "power1.out" });
       tl.fromTo('.popup2', {opacity:1}, {opacity:0})
     });
     expButton.addEventListener('click', function(){
     window.location.href = 'exp.html';
 })
 }
-
+if(submit){
+  submit.addEventListener('mouseenter', function() {
+    gsap.to(submit, { scale: 1.1, duration: 0.2, ease: "power1.out" });
+  });
+  submit.addEventListener('mouseleave', function() {
+    gsap.to(submit, { scale: 1, duration: 0.2, ease: "power1.out" });
+  });
+}
+ 
 }
 
 

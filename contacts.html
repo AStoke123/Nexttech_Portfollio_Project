@@ -9,9 +9,11 @@
      </head>
      <body>
      <div class = "topContainer" >
+      <canvas id="snow-canvas" style="position:fixed; top:0; left:0; pointer-events:none; z-index:2;"></canvas>
+    <button class = toggle></button>
         <button class = "exitB" onclick ="window.location.href = 'index.html'"> Main page</button>
         <h1> Contact Me</h1>
-       
+       <div class = "flexC">
         <form class="contactForm">
              <p>If you want to contact me please just enter your information into the forms below</p>
           <label for="firstName">First Name:</label>
@@ -27,6 +29,11 @@
           <textarea id="message" name="message" rows="5" cols="40" required></textarea><br><br>
           
           <button type="submit" class = "submit">Send</button>
+        </form>
+        <div class="contactPics">
+  <img src="assets/linkedIn.png" style="cursor:pointer;" onclick="window.open('https://www.linkedin.com/in/andrew-stokebrand-07-cs/', '_blank')">
+  <img src="assets/Github.png" style="cursor:pointer;" onclick="window.open('https://github.com/AStoke123', '_blank')">
+</div>
         </div>
 </body>
 </html>
