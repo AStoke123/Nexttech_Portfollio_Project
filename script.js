@@ -68,7 +68,6 @@ if(canvas){const ctx = canvas.getContext('2d');
   update();}
 if(abtButton){
     abtButton.addEventListener('click',function(){
-  abtButton.style.display = "none"
   window.location.href = 'aboutMe.html';
   })
   abtButton.addEventListener('mouseenter', function() {
